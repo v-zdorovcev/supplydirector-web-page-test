@@ -1,0 +1,71 @@
+@import "../../assets/colors";
+
+.root {
+  display: grid;
+  grid-template-areas:
+    "rating provider status"
+    "price price price"
+    "message message message"
+    "date date menu";
+  grid-template-columns: 45px 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  align-items: center;
+  background-color: $color_white;
+  border-radius: 12px;
+  padding: 16px;
+
+  @media (min-width: 1000px) {
+    grid-template-columns: 45px 140px 300px repeat(3, auto) 1fr;
+    grid-template-areas: "rating provider message price date status menu";
+  }
+}
+
+.rating {
+  grid-area: rating;
+  display: inline-flex;
+  gap: 4px;
+
+  span {
+    font-size: 14px;
+  }
+}
+
+.provider {
+  grid-area: provider;
+  font-size: 14px;
+  // overflow: hidden;
+  // text-overflow: ellipsis;
+  // white-space: nowrap;
+}
+
+.message {
+  margin: 0;
+  grid-area: message;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: $GRAY_400;
+}
+
+.price {
+  grid-area: price;
+  font-weight: 900;
+}
+
+.date {
+  grid-area: date;
+  font-size: 14px;
+}
+
+.status {
+  justify-self: end;
+  grid-area: status;
+}
+
+.menu {
+  grid-area: menu;
+  justify-self: end;
+  display: flex;
+}

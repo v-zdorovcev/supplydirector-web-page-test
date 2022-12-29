@@ -1,0 +1,15 @@
+@import "../../assets/colors";
+@import "../../assets/constants";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px;
+  background-color: $GRAY_50;
+  min-height: 100vh;
+
+  @media (min-width: $TABLET_WIDTH) {
+    padding: 48px;
+  }
+}

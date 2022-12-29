@@ -1,0 +1,19 @@
+@import "../../assets/colors";
+
+.root {
+  display: inline-grid;
+  grid-template-columns: 20px max-content;
+  align-items: center;
+  column-gap: 5px;
+  color: $BLUE_500;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+}

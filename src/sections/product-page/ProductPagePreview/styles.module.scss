@@ -1,0 +1,42 @@
+@import "../../../assets/colors";
+@import "../../../assets/constants";
+
+.root {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $TABLET_WIDTH) {
+    max-width: 280px;
+  }
+}
+
+.activeImage {
+  background-color: $GRAY_50;
+  border-radius: 10px;
+}
+
+.thumbnails {
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.thumbnail {
+  padding: 4px;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0px 0px 0px 1px $GRAY_200;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 0px 0px 2px $BLUE_400;
+  }
+}
+
+.selectedThumbnail {
+  box-shadow: 0px 0px 0px 2px $BLUE_400;
+}

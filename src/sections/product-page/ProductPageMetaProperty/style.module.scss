@@ -1,0 +1,14 @@
+@import "../../../assets/fonts";
+
+.root {
+}
+
+.title {
+  margin-bottom: 4px;
+}
+
+.value {
+  font-family: $font-family-small, sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+}

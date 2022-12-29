@@ -1,0 +1,43 @@
+@import "../../../assets/colors";
+@import "../../../assets/constants";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header {
+  display: grid;
+  row-gap: 12px;
+  justify-items: start;
+
+  @media (min-width: $TABLET_WIDTH) {
+    grid-template-columns: 1fr auto;
+    align-items: start;
+  }
+}
+
+.name {
+  margin: 0;
+  padding-right: 12px;
+}
+
+.property {
+  font-weight: 400;
+}
+
+.status {
+  margin-left: 5px;
+}
+
+.category {
+  color: $GRAY_400;
+}
+
+.links {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

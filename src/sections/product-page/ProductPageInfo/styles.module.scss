@@ -1,0 +1,35 @@
+@import "../../../assets/colors";
+@import "../../../assets/constants";
+
+.root {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "preview preview"
+    "details details"
+    "meta meta";
+  gap: 30px;
+  padding: 26px;
+  background-color: $color_white;
+  border-radius: 8px;
+  min-height: 500px;
+
+  @media (min-width: $TABLET_WIDTH) {
+    grid-template-columns: 280px 1fr;
+    grid-template-areas:
+      "preview details"
+      "meta meta";
+  }
+}
+
+.preview {
+  grid-area: preview;
+}
+
+.details {
+  grid-area: details;
+}
+
+.meta {
+  grid-area: meta;
+}

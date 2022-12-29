@@ -1,0 +1,31 @@
+@import "../../assets/colors";
+
+.root {
+  display: inline-block;
+  padding-inline: 10px;
+  white-space: nowrap;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 26px;
+  flex-shrink: 0;
+}
+
+.pending {
+  background-color: $ORANGE_100;
+  color: $ORANGE_500;
+}
+
+.new {
+  background-color: $BLUE_100;
+  color: $BLUE_500;
+}
+
+.rejected {
+  background-color: $RED_100;
+  color: $RED_500;
+}
+
+.success {
+  background-color: $GREEN_100;
+  color: $GREEN_500;
+}
